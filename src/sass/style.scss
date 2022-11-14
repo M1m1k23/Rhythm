@@ -1,0 +1,45 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+@import 'base/variables';
+@import 'base/mixins';
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+@import 'blocks/header';
+@import 'blocks/main';
+@import 'blocks/title';
+@import 'blocks/store';
+@import 'blocks/categor';
+@import 'blocks/brands';
+@import 'blocks/why';
+@import 'blocks/reviews';
+@import 'blocks/favorite';
+@import 'blocks/footer';
+@import 'blocks/media';
+

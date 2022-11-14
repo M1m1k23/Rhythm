@@ -1,0 +1,105 @@
+.reviews {
+    padding-top: 240px;
+    padding-bottom: 240px;
+    &__title {
+        margin-bottom: 109px;
+    }
+}
+
+.slide {
+    &-swiper {
+        &-reviews {
+            display: flex;
+            &__picture {
+                flex: 0 1 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+            &__img {
+                position: relative;
+                width: 320px;
+                height: 320px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 285px;
+                    height: 257px;
+                    top: 40px;
+                    left: -80px;
+                    transform: rotate(-7.72deg);
+                    background-color: #FF6428;
+                    border-radius: 40px 0px 400px 400px;
+                }
+                img {
+                    border-radius: 50%;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    object-fit: center;
+                }
+            }
+            &__body {
+                flex: 0 1 50%;
+            }
+            &__text {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 160%;
+                color: #666666;
+                &:not(:last-child) {
+                    margin-bottom: 56px;
+                }
+                p {
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            &__name {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 160%;
+                color: #000000;
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+            }
+            &__position {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 160%;
+                letter-spacing: 0.08em;
+                color: #868686;
+            }
+        }
+    }
+}
+.swiper {
+    &-reviews {
+        &__pagination {
+            display: flex;
+            justify-content: flex-end;
+            transform: translateY(-100%);
+        }
+    }
+    &-pagination {
+        &-bullet {
+            background: #C4C4C4;
+            border-radius: 20px;
+            flex: 0 0 10px;
+            height: 16px;
+            opacity: 1;
+            transition: all 0.3s;
+            &-active {
+                background: #FF6428;
+                flex: 0 0 24px;
+                
+            }
+        }
+
+    }
+}

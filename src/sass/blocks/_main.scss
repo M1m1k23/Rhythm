@@ -1,0 +1,95 @@
+.main {
+    padding-bottom: 80px;
+    overflow: hidden;
+    &__wrapper {
+        display: flex;
+    }
+    &__content {
+        flex: 0 1 50%;
+        align-self: flex-end;
+        padding-top: 120px;
+        padding-bottom: 60px;
+        padding-right: 20px;
+    }
+    &__title {
+        font-family: 'CalSans';
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 67px;
+        color: #121212;
+        span {
+            font-family: 'CalSans';
+            color: #FF6428;
+        }
+    }
+    &__text {
+        margin-top: 10px;
+        font-family: 'Poppins';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #666666;
+        max-width: 420px;
+    }
+    &-actions {
+        margin-top: 33px;
+        display: flex;
+        align-items: center;
+        &__btn {
+            padding: 18px 48px;
+            background-color: #FF6428;
+            border-radius: 40px;
+            font-family: 'Poppins';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-right: 40px;
+            text-align: center;
+            transition: all .5s;
+            &:hover {
+                text-decoration: none;
+                color: #FFFFFF;
+                background-color: #c74715;
+                
+            }
+        }
+        &__icon {
+            transition: all .5s;
+            &:not(:last-child) {
+                margin-right: 27px;
+            }
+            &:hover {
+                transform: translateY(-6px);
+            }
+        }
+    }
+    &__decor {
+        flex: 0 1 50%;
+    }
+    &__photo {
+        position: relative;
+        margin-right: -135px;
+        max-width: 672px;
+        padding-bottom: 97.6%;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            border-radius: 0 0 160px 375px;
+        }
+        &::after {
+            content: '';
+            background: url('../img/main/decor.svg') 0 0 no-repeat;
+            width: 80px;
+            height: 80px;
+            right: 36%;
+            bottom: 0;
+            transform: translate(0, 50%);
+            position: absolute;
+        }
+    }
+}

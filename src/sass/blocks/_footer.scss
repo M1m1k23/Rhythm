@@ -1,0 +1,98 @@
+.footer {
+    background: #EEEEEE;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    &-body {
+        display: flex;
+        gap: 50px;
+        &__column {
+            &_full {
+                flex: 1 1 auto;
+            }
+        }
+        &__logo {
+            display: inline-block;
+            &:not(:last-child) {
+                margin-bottom: 28px;
+            }
+        }
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &__link {
+            display: inline-block;
+            line-height: 24px;
+            padding-left: 44px;
+            color: #666666;
+            font-weight: 400;
+            font-size: 16px;
+            &:hover {
+                color: #666666;
+            }
+            
+            &_email {
+                background: url('../icons/footer/sms.svg') left no-repeat;
+            }
+            &_location {
+                background: url('../icons/footer/location.svg') left no-repeat;
+            }
+        }
+        &__menu {
+            display: flex;
+            gap: 126px;
+            justify-content: center;
+        }
+    }
+    &__copy {
+        padding-top: 80px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        color: rgba(18, 18, 18, 0.6);
+
+    }
+    .menu {
+        &-footer {
+            &__title {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 27px;
+                text-transform: uppercase;
+                color: #121212;
+                margin-bottom: 20px;
+            }
+            &__item {
+                &:not(:last-child) {
+                   margin-bottom: 16px;
+                }
+            }
+            &__link {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: rgba(18, 18, 18, 0.6);
+            }
+        }
+    }
+    .social {
+        &-footer {
+            &__title {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 27px;
+                text-transform: uppercase;
+                color: #121212;
+                margin-bottom: 12px;
+            }
+            &__items {
+                display: flex;
+                gap: 40px;
+                align-items: center;
+            }
+        }
+    }
+}

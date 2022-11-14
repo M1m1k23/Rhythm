@@ -1,0 +1,35 @@
+.favorite {
+    padding-bottom: 120px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__body {
+        padding-right: 20px;
+        flex: 0 1 50%;
+    }
+    &__title {
+        text-align: left;
+        font-size: 48px;
+        line-height: 140%;
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    }
+    &-apps {
+        display: flex;
+        gap: 25px;
+        &__item {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+    &__img {
+        flex: 0 1 50%;
+        text-align: center;
+        img {
+            max-width: 100%;
+        }
+    }
+}
